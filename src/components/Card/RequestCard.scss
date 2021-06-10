@@ -1,0 +1,109 @@
+@import "../../default.scss";
+
+.request-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .request-header-name-container {
+    .request-header-name-title {
+      font-weight: bold;
+      .request-header-name-text {
+        display: inline-block;
+        color: $karamel-purple;
+      }
+    }
+  }
+  .request-header-received-container {
+    font-size: 14px;
+    line-height: 18px;
+    .request-header-received-title {
+      font-family: "Roboto";
+      font-weight: bold;
+    }
+    .request-header-received-text {
+      font-family: "Noto Sans KR";
+    }
+  }
+}
+
+.request-body-container {
+  display: flex;
+  flex-direction: column;
+  .request-body-item {
+    margin-top: 24px;
+    &:first-child {
+      margin-top: 0;
+    }
+    .request-body-item-title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .request-body-item-content {
+      margin-top: 12px;
+      .request-body-item-interested-proc-row {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        grid-gap: 8px;
+        flex-direction: row;
+        font-size: 14px;
+        margin-top: 10px;
+        &:first-child {
+          margin-top: 0;
+        }
+        .request-body-item-interested-proc-row-title {
+          display: flex;
+          flex-direction: row;
+          font-weight: 600;
+          .request-body-item-interested-proc-row-name {
+            font-weight: 400;
+            margin-left: 4px;
+          }
+        }
+      }
+      .request-body-item-further-requests {
+        background: #f8f8f8;
+        border: 1px solid #d0d0d0;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 12px;
+        font-family: "Noto Sans KR";
+        font-size: 14px;
+      }
+      .request-body-item-uploaded-pictures {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 13px;
+        .request-body-item-uploaded-pictures-img-placeholder {
+          width: 100%;
+          padding-top: 100%;
+          background-color: #eeeeee;
+          border-radius: 0.25rem;
+        }
+      }
+    }
+    .request-body-button-container {
+      width: 160px;
+      margin-left: auto;
+    }
+  }
+}
+
+.request-card-container {
+  border: 2px solid #eeeeee;
+  box-sizing: border-box;
+  border-radius: 21px;
+  background-color: $white;
+  max-width: 43rem;
+  margin: 0 auto;
+  margin-top: 12px;
+  &:first-child {
+    margin-top: 0;
+  }
+  .request-card-header-container {
+    padding: 36px 88px 18px;
+    border-bottom: 1px solid #eeeeee;
+  }
+  .request-card-body-container {
+    padding: 24px 88px 36px;
+  }
+}

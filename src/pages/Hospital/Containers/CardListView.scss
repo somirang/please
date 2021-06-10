@@ -1,0 +1,28 @@
+@import "../../../default.scss";
+
+.legend-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr 8rem;
+  grid-gap: 0.5rem;
+  padding: 1.5rem 2.25rem;
+  .legend-item {
+    font-family: "Noto Sans KR";
+    font-weight: 500;
+    font-size: 14px;
+    color: #a3a3a3;
+  }
+}
+
+.hospital-card-list-container {
+  .hospital-card-list {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 2.25rem 2.25rem;
+    .hospital-card-list-item {
+      margin-bottom: 0.5rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

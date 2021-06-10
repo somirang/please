@@ -1,0 +1,17 @@
+@import "../default.scss";
+
+.forgot-page-container {
+  width: 100%;
+  padding: 2rem 1.5rem;
+  box-sizing: border-box;
+  .forgot-page-title {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  .forgot-page-sub-title {
+    font-size: 14px;
+    font-family: "Noto Sans KR";
+    margin-bottom: 2.25rem;
+  }
+}

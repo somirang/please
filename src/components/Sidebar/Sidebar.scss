@@ -1,0 +1,100 @@
+@import "../../default.scss";
+
+.sidebar-container {
+  .sidebar-content {
+    width: 0%;
+    height: 100vh;
+    background-color: $white;
+    position: fixed;
+    z-index: calc(#{$dimmer-z-index} + 1);
+    transition: width 0.2s ease-out;
+    overflow: hidden;
+    font-size: 1rem;
+    &.show {
+      visibility: visible;
+      width: 70%;
+      @media (min-width: $bp-tablet) {
+        width: max(30%, 300px);
+      }
+      @media (min-width: $bp-desktop) {
+        width: max(25%, 300px);
+      }
+      @media (min-width: $bp-desktop-wide) {
+        width: max(20%, 300px);
+      }
+    }
+    .sidebar-exit-icon-box {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 32px 24px;
+      padding-bottom: 4px;
+      box-sizing: border-box;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s 0.2s;
+      position: relative;
+      &.show {
+        visibility: visible;
+        opacity: 1;
+      }
+      .sidebar-title {
+        font-size: 20px;
+        color: $karamel-purple;
+        margin-top: 2px;
+        .sidebar-logo {
+          height: 21px;
+        }
+      }
+      .sidebar-exit-icon {
+        width: 18px;
+        cursor: pointer;
+      }
+      .sidebar-greetings {
+        position: absolute;
+        top: 3rem;
+      }
+    }
+    .sidebar-menu-title-item {
+      height: 80px;
+      padding: 48px 0px 10px 32px;
+      box-sizing: border-box;
+      overflow: hidden;
+      visibility: hidden;
+      transition: visibility 0s 0.2s;
+      opacity: 0;
+      &.show {
+        visibility: visible;
+        opacity: 1;
+      }
+      .sidebar-menu-title-content {
+        font-weight: bold;
+        .sidebar-menu-title-home-icon {
+          width: 12px;
+          height: 12px;
+          margin-right: 6px;
+        }
+      }
+    }
+    .sidebar-menu-item {
+      border-bottom: 1px solid #eeeeee;
+      overflow: hidden;
+      opacity: 0;
+      text-overflow: ellipsis;
+      line-clamp: 1;
+      padding: 16px 32px 16px 0px;
+      margin-left: 32px;
+      box-sizing: border-box;
+      visibility: hidden;
+      transition: visibility 0s 0.2s;
+      font-weight: 500;
+      cursor: pointer;
+      &.show {
+        visibility: visible;
+        opacity: 1;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}

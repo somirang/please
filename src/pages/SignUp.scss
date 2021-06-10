@@ -1,0 +1,40 @@
+@import "../default.scss";
+
+.signup-page-container {
+  width: 100%;
+  padding: 2rem 1.5rem;
+  box-sizing: border-box;
+  &.no-padding {
+    padding: 0;
+  }
+  .signup-page-title {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  .signup-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .signup-term-agree-container {
+      display: flex;
+      font-size: 14px;
+      margin-top: 8px;
+      .signup-term-checkbox-container {
+        width: 16px;
+        min-width: 16px;
+        height: 16px;
+        min-height: 16px;
+        margin-right: 8px;
+      }
+    }
+  }
+  .signup-footer-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 44px;
+    .signup-footer-gap {
+      width: 8px;
+    }
+  }
+}

@@ -1,0 +1,253 @@
+@import "../../default.scss";
+
+.quote-detail-header-container {
+  margin: 0 1.5rem;
+  box-sizing: border-box;
+  .quote-detail-info-item {
+    .quote-detail-info-subtitle {
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+  .quote-detail-greetings {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 24px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .quote-detail-hospital-header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 22px;
+    .quote-detail-hospital-profile-container {
+      width: 3rem;
+      height: 3rem;
+      border: 1px solid #d0d0d0;
+      border-radius: 3rem;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 13px;
+      .quote-detail-hospital-profile-img {
+        width: 2rem;
+        height: 1.5rem;
+      }
+    }
+    .quote-detail-hospital-basic-info-container {
+      .quote-detail-hospital-name {
+        font-size: 18px;
+        font-weight: bold;
+        color: $karamel-purple;
+        margin-top: 2px;
+        margin-bottom: 4px;
+      }
+      .quote-detail-hospital-addr {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+  .quote-detail-about-hospital {
+    margin-top: 28px;
+    .quote-detail-about-hospital-title {
+    }
+    .quote-detail-about-hospital-content {
+      font-family: "Noto Sans KR";
+      font-size: 13px;
+      margin-bottom: 8px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      &.see-more {
+        display: flex;
+      }
+    }
+    .quote-detail-about-hospital-see-more {
+      position: relative;
+      width: 5.25rem;
+      height: 1.5rem;
+      font-size: 10px;
+      font-weight: 600;
+      background-color: #eeeeee;
+      border-radius: 1.5rem;
+      display: flex;
+      align-items: center;
+      padding-left: 12px;
+      box-sizing: border-box;
+      cursor: pointer;
+      .quote-detail-about-hospital-see-more-arrow-icon {
+        position: absolute;
+        width: 10px;
+        height: 5px;
+        right: 12px;
+        &.rotated {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  .quote-detail-interested-procedure {
+    margin-top: 1.5rem;
+    .quote-detail-interested-procedure-text {
+      font-family: "Noto Sans KR";
+      font-size: 13px;
+      margin-bottom: 18px;
+    }
+    .quote-detail-interested-procedure-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 0.5rem;
+      &.small-preview {
+        width: 18rem;
+      }
+      .quote-detail-interested-procedure-img-placeholder {
+        width: calc(calc(100vw - 5rem) / 5);
+        height: calc(calc(100vw - 5rem) / 5);
+        background-color: #eeeeee;
+        border-radius: 0.25rem;
+        &.small-preview {
+          width: 3.2rem;
+          height: 3.2rem;
+        }
+      }
+    }
+  }
+}
+
+.quote-detail-container {
+  width: 100%;
+  .quote-detail-recommended-procedures-container {
+    padding-top: 1.5rem;
+    border-top: 1px solid #eeeeee;
+    margin: 1.5rem;
+    margin-top: 28px;
+    .quote-detail-recommended-procedures-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: $karamel-purple;
+    }
+    .quote-detail-recommended-procedure-item {
+      margin-top: 28px;
+      .quote-detail-recommended-procedure-subtitle {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1rem;
+        .quote-detail-recommended-procedure-subtitle-num {
+          width: 19px;
+          height: 19px;
+          font-size: 14px;
+          border: 1px solid #454545;
+          border-radius: 19px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 2px;
+          box-sizing: border-box;
+          margin-right: 0.5rem;
+        }
+        .quote-detail-recommended-procedure-subtitle-text {
+          font-weight: bold;
+        }
+      }
+      .quote-detail-recommended-procedure-sub-item {
+        position: relative;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        border: 1px solid #d0d0d0;
+        margin-bottom: 0.5rem;
+        &.purple {
+          background: rgba(136, 70, 245, 0.05);
+          border: 1px solid $karamel-soft-purple;
+        }
+        &.price {
+          margin-bottom: 1.5rem;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .quote-detail-recommended-procedure-sub-item-header {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          &.detailed {
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eeeeee;
+          }
+          .quote-detail-recommended-procedure-sub-item-title {
+            font-family: "Noto Sans KR";
+            font-size: 13px;
+            font-weight: bold;
+          }
+          .quote-detail-recommended-procedure-sub-item-title-content {
+            font-family: "Roboto";
+            font-size: 14px;
+            font-weight: bold;
+            color: $karamel-purple;
+          }
+          .quote-detail-recommended-procedure-related-arrow {
+            transition: transform 0.2s ease-in-out;
+            &.rotated {
+              transform: rotate(180deg);
+            }
+          }
+        }
+        .quote-detail-recommended-procedure-sub-item-body {
+          font-family: "Noto Sans KR";
+          font-size: 12px;
+          margin-top: 0.5rem;
+          .quote-detail-recommended-procedure-sub-item-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            &:first-child {
+              margin-top: 0.5rem;
+            }
+            &.paragraph {
+              flex-direction: column;
+            }
+            .quote-detail-recommended-procedure-sub-item-row-title {
+              font-family: "Noto Sans KR";
+              font-weight: bold;
+            }
+            .quote-detail-recommended-procedure-sub-item-row-content {
+              font-family: "Noto Sans KR";
+              &.paragraph {
+                margin-top: 0.5rem;
+              }
+            }
+          }
+        }
+        .quote-detail-recommended-procedure-sub-item-help-text {
+          position: absolute;
+          bottom: -1rem;
+          left: 0;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .quote-detail-main-button-container {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: $white;
+    padding: 14px 1.5rem;
+    border-top: 1px solid #eeeeee;
+    .quote-detail-main-button-wrapper {
+      width: 100%;
+      margin-right: 0.5rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

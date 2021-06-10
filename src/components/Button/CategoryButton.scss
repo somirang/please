@@ -1,0 +1,34 @@
+@import "../../default.scss";
+
+.category-button-container {
+  display: flex;
+  flex-direction: column;
+  width: calc(calc(100vw - 4.5rem) / 4);
+  height: calc(calc(100vw - 4.5rem) / 4);
+  border-radius: 1rem;
+  border: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-weight: 600;
+  &.selected {
+    background-color: rgba(136, 70, 245, 0.05);
+    border: 2px solid $karamel-purple;
+  }
+  &:last-child {
+    margin-right: auto;
+  }
+  .category-button-icon-container {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .category-button-text {
+    font-size: 9px;
+    text-align: center;
+  }
+}

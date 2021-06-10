@@ -1,0 +1,22 @@
+$white: #ffffff;
+$black: #000000;
+$gray: #bababa;
+$dimmer-z-index: 100;
+$karamel-purple: #8846f5;
+$karamel-soft-purple: #f0e6fa;
+$karamel-black: #454545;
+$karamel-font-gray: #505050;
+$karamel-border-gray: #d0d0d0;
+
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
+$bp-desktop-wide: 1280px;
+
+div {
+  color: $karamel-black;
+  font-family: "Raleway", sans-serif;
+}
+
+*:focus {
+  outline: none;
+}

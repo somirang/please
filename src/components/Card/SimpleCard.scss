@@ -1,0 +1,123 @@
+@import "../../default.scss";
+
+.simple-card-container {
+  width: 100%;
+  border: 1px solid #eeeeee;
+  border-radius: 11px;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  &.purple {
+    background-color: rgba(136, 70, 245, 0.05);
+    border-color: $karamel-soft-purple;
+  }
+  .simple-card-header-container {
+    display: flex;
+    padding: 1rem;
+    border-bottom: 1px solid #eeeeee;
+    align-items: center;
+    &.purple {
+      border-color: #9b5fff;
+    }
+    .simple-card-profile-container {
+      width: 2.125rem;
+      height: 2.125rem;
+      border: 1px solid #d0d0d0;
+      border-radius: 2.125rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      .simple-card-profile-img {
+      }
+    }
+    .simple-card-name-container {
+      font-size: 15px;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+  }
+  .simple-card-body-container {
+    padding: 1rem;
+    .simple-card-content-container {
+      position: relative;
+      .simple-card-content-item {
+        margin-top: 8px;
+        .simple-card-sub-title {
+          font-family: "Noto Sans KR";
+          font-weight: 500;
+          font-size: 12px;
+        }
+        .simple-card-sub-content {
+          font-size: 12px;
+          margin-top: 6px;
+          // QuoteCard class
+          &.quote-price {
+            font-family: "Roboto";
+            color: $karamel-purple;
+            font-weight: bold;
+          }
+          // WaitingCard class
+          &.waiting-date {
+            color: $karamel-purple;
+            font-weight: bold;
+            font-size: 18px;
+          }
+          &.waiting-meet-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: underline;
+            padding-top: 5px;
+            padding-bottom: 7px;
+            color: $karamel-purple;
+            background: rgba(136, 70, 245, 0.05);
+            border: 1px solid #f0e6fa;
+            box-sizing: border-box;
+            border-radius: 6px;
+            font-size: 12px;
+            font-family: "Noto Sans KR";
+          }
+        }
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+      // QuoteCard class
+      .quote-card-consult-button-container {
+        width: 6.5rem;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+      // WaitingCard class
+      .waiting-card-footer-container {
+        margin-top: 1rem;
+        .waiting-card-see-quote-container {
+          .waiting-card-see-quote-wrapper {
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            .waiting-card-see-quote-icon {
+            }
+            .waiting-card-see-quote-text {
+              font-family: "Noto Sans KR";
+              font-size: 14px;
+              font-weight: bold;
+              margin-left: 0.5rem;
+            }
+          }
+        }
+        .waiting-card-footer-button-container {
+          flex-direction: row;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 0.5rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

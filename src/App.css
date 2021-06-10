@@ -1,0 +1,47 @@
+.App {
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.app-container {
+  /* max-height: 100vh; */
+  /* overflow-y: scroll; */
+}
+
+.App-header {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  box-sizing: border-box;
+}
+
+.user-page {
+  /* padding: 2rem 1.5rem; */
+}
+
+.hospital-page {
+  height: calc(100vh - 4rem);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: "Gotham Rounded";
+  src: url("fonts/GothamRoundedBold_21016.ttf") format("truetype");
+}

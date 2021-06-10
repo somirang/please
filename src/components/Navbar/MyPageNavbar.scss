@@ -1,0 +1,48 @@
+@import "../../default.scss";
+
+.my-page-navbar-container {
+  display: flex;
+  flex-direction: row;
+  height: 2rem;
+  border: 1px solid $karamel-border-gray;
+  border-radius: 2rem;
+  .my-page-navbar-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+    // &.Quotes {
+    //   clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%);
+    //   background-color: yellow;
+    //   border-radius: 20px;
+    // }
+    .my-page-navbar-number {
+      width: 13px;
+      height: 13px;
+      border: 1px solid $karamel-black;
+      border-radius: 13px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      margin-right: 4px;
+      &.selected {
+        border-color: $karamel-purple;
+      }
+      .my-page-navbar-number-text {
+        margin-bottom: 1.5px;
+        &.selected {
+          color: $karamel-purple;
+        }
+      }
+    }
+    .my-page-navbar-item-text {
+      font-weight: bold;
+      &.selected {
+        color: $karamel-purple;
+      }
+    }
+  }
+}

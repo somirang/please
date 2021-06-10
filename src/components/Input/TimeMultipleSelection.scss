@@ -1,0 +1,28 @@
+@import "../../default.scss";
+
+.time-multiple-selection-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.5rem;
+  .time-multiple-selection-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 1px solid #a3a3a3;
+    border-radius: 6px;
+    color: #a3a3a3;
+    font-size: 13px;
+    font-family: "Roboto";
+    &.selected {
+      background-color: $karamel-soft-purple;
+      border-color: $karamel-purple;
+      color: $karamel-purple;
+    }
+    &.disabled {
+      background-color: #eeeeee;
+      border-color: #d0d0d0;
+    }
+  }
+}

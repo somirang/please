@@ -1,0 +1,109 @@
+@import "../default.scss";
+
+.landing-page-container {
+  width: 100%;
+  .landing-page-body-container {
+    .landing-page-body-section {
+      position: relative;
+      height: 17rem;
+      &.soft-purple {
+        background-color: #fbfafc;
+      }
+      .landing-page-body-landing-3-img {
+        position: absolute;
+        top: 2rem;
+        left: 11rem;
+      }
+      .landing-page-body-desc-container {
+        position: absolute;
+        top: 5rem;
+        left: 12.5rem;
+        &.text-align-left {
+          top: 6rem;
+          left: 2rem;
+        }
+        .landing-page-body-karamel-logo {
+          width: 7rem;
+        }
+        .landing-page-body-desc-main-text {
+          font-family: "Noto Sans KR";
+          font-weight: bold;
+          font-size: 18px;
+          .landing-page-body-desc-main-text-purple {
+            display: inline;
+            color: $karamel-purple;
+            font-weight: bold;
+          }
+        }
+        .landing-page-body-desc-sub-text {
+          width: 9rem;
+          margin-top: 0.5rem;
+          font-size: 14px;
+          &.text-align-center {
+            text-align: center;
+            width: 7rem;
+          }
+        }
+        .landing-page-body-desc-button-container {
+          width: 8.5rem;
+          margin-top: 1.5rem;
+        }
+      }
+    }
+  }
+  .landing-page-footer-container {
+    padding: 1.5rem;
+    background-color: #505050;
+    font-size: 13px;
+    .landing-page-footer-row {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+      .landing-page-footer-row-item {
+        display: flex;
+        flex-direction: row;
+        color: $white;
+        .landing-page-footer-row-item-inner {
+          font-family: "Noto Sans KR";
+          color: $white;
+          font-weight: bold;
+          padding-left: 1rem;
+          margin-left: 1rem;
+          border-left: 1px solid $white;
+          &:first-child {
+            padding-left: 0;
+            margin-left: 0;
+            border-left: none;
+          }
+        }
+      }
+      .landing-page-footer-row-title {
+        width: 30%;
+        margin-right: auto;
+        color: $white;
+        font-weight: bold;
+        font-family: "Noto Sans KR";
+      }
+      .landing-page-footer-row-content {
+        width: 65%;
+        color: $white;
+        font-family: "Noto Sans KR";
+        margin-right: auto;
+      }
+    }
+    .landing-page-footer-details-container {
+      line-height: 20px;
+      padding-top: 1.5rem;
+      border-top: 1px solid #a3a3a3;
+      .landing-page-footer-details-row {
+        color: $white;
+        font-size: 11px;
+        &.title {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

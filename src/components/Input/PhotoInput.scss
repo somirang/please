@@ -1,0 +1,24 @@
+@import "../../default.scss";
+
+.photo-input-container {
+  .photo-input {
+    display: none;
+  }
+  .photo-input-label {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 2px solid gray;
+    box-sizing: border-box;
+    cursor: pointer;
+    .photo-input-icon-container {
+      .photo-input-img {
+        width: 2rem;
+        height: 1.5rem;
+      }
+    }
+  }
+}

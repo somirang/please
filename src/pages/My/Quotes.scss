@@ -1,0 +1,12 @@
+@import "../../default.scss";
+
+.quotes-container {
+  padding: 0 1.5rem 2rem;
+  .quotes-timestamp-container {
+    font-family: "Noto Sans KR";
+    font-weight: 500;
+    font-size: 11px;
+    color: #a3a3a3;
+    margin: 8px 0;
+  }
+}

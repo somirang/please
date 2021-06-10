@@ -1,0 +1,21 @@
+@import "../../default.scss";
+
+.status-container {
+  margin-bottom: 2rem;
+  .status-percentage-text {
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    font-family: "Gotham Rounded";
+    margin-bottom: 1rem;
+  }
+  .status-done-airplane-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    .status-done-airplane-icon {
+      margin: 0 auto;
+    }
+  }
+}

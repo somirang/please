@@ -1,0 +1,36 @@
+@import "../../default.scss";
+
+.photo-preview-container {
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  .photo-preview-x-button-container {
+    width: 0.8rem;
+    height: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4rem;
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+    .photo-preview-x-button {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.4rem;
+      cursor: pointer;
+      .photo-preview-x-img {
+        width: 0.4rem;
+        height: 0.4rem;
+      }
+    }
+  }
+  .photo-img {
+    width: 100%;
+    height: 100%;
+  }
+}

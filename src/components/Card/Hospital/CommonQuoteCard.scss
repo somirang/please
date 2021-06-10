@@ -1,0 +1,85 @@
+@import "../../../default.scss";
+
+.common-quote-card-container {
+  background: #ffffff;
+  border: 2px solid #eeeeee;
+  box-sizing: border-box;
+  border-radius: 14px;
+  padding: 2.25rem;
+  .common-quote-card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr 8rem;
+    grid-gap: 0.5rem;
+    .common-quote-card-col {
+      display: grid;
+      grid-template-rows: 2fr 2fr 1fr;
+      grid-gap: 0.5rem;
+      .common-quote-card-patient-name-text {
+        font-weight: bold;
+        color: $karamel-purple;
+      }
+      .common-quote-card-row-item {
+        .common-quote-card-row-title {
+          font-family: "Noto Sans KR";
+          font-weight: 500;
+          font-size: 13px;
+          color: #505050;
+        }
+        .common-quote-card-row-content {
+          font-family: "Noto Sans KR";
+          font-size: 13px;
+          color: #a3a3a3;
+        }
+        .common-quote-card-see-more {
+          display: inline-flex;
+          float: right;
+          flex-direction: row;
+          align-items: center;
+          cursor: pointer;
+          .common-quote-card-see-more-text {
+            color: $karamel-purple;
+            font-weight: bold;
+            font-size: 13px;
+          }
+          .common-quote-card-see-more-arrow-icon {
+            width: 7px;
+            height: 13px;
+            margin-left: 0.5rem;
+          }
+        }
+        .common-quote-card-status {
+          font-size: 12px;
+          padding: 0.5rem;
+          box-sizing: border-box;
+          border-radius: 8px;
+          line-height: 1rem;
+          &.purple {
+            background-color: $karamel-soft-purple;
+          }
+          &.green {
+            background-color: rgba(26, 173, 25, 0.05);
+          }
+          &.yellow {
+            background-color: rgba(255, 245, 210, 0.5);
+          }
+          .common-quote-card-status-header {
+            font-family: "Roboto";
+            font-weight: bold;
+            &.purple {
+              color: $karamel-purple;
+            }
+            &.green {
+              color: #1aad19;
+            }
+            &.yellow {
+              color: #d8ad21;
+            }
+          }
+          .common-quote-card-status-body {
+            font-family: "Roboto";
+          }
+        }
+      }
+    }
+  }
+}

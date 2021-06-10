@@ -1,0 +1,35 @@
+@import "../../default.scss";
+
+.calendar-carousel-container {
+  .date-button-container {
+    width: 68px;
+    height: 90px;
+    border: 1px solid #a3a3a3;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &.selected {
+      background: $karamel-soft-purple;
+      border: 1px solid $karamel-purple;
+      box-sizing: border-box;
+    }
+    .date-button-date {
+    }
+    .date-button-month {
+    }
+    .date-button-day {
+    }
+  }
+  .swiper-container {
+    .calendar-carousel-swiper-button-prev {
+      transform: rotate(180deg);
+      left: 0;
+    }
+    .calendar-carousel-swiper-button-next {
+      right: 0;
+    }
+  }
+}

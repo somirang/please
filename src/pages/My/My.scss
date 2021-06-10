@@ -1,0 +1,29 @@
+@import "../../default.scss";
+
+.my-page-container {
+  width: 100%;
+  .my-page-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 2rem 1.5rem 0;
+    &.thin {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 23px;
+    }
+    .my-page-title-box {
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      .my-page-title-home-icon {
+        width: 15px;
+        height: 15px;
+        margin-right: 0.5rem;
+        margin-bottom: 2px;
+      }
+    }
+  }
+  .my-page-navbar-wrapper {
+    margin: 20px 1.5rem 27px;
+  }
+}

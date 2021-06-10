@@ -1,0 +1,72 @@
+@import "../../default.scss";
+
+.main-page-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 16px;
+  .main-page-sidebar-container {
+    width: 16rem;
+    border-right: 1px solid #eeeeee;
+  }
+  .main-page-main-container {
+    width: calc(100% - 16rem);
+    display: flex;
+    flex-direction: column;
+    background-color: #fbfafc;
+
+    .main-page-main-navbar-container {
+      height: 77px;
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 1px solid #d0d0d0;
+      .main-page-main-navbar-item-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .main-page-main-navbar-item {
+          height: 100%;
+          display: inline-flex;
+          align-items: center;
+          cursor: pointer;
+          box-sizing: border-box;
+          font-size: 20px;
+          font-weight: 600;
+          color: #a3a3a3;
+          &:hover {
+            color: #888888;
+          }
+          &.selected {
+            border-bottom: 2px solid $karamel-purple;
+            color: $karamel-purple;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .main-page-main-content-container {
+      height: 100%;
+      overflow: scroll;
+      .hospital-loading-container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: $karamel-purple;
+        opacity: 0.6;
+        &.preview {
+          background-color: $white;
+        }
+      }
+      .hospital-mypage-no-request-text {
+        display: flex;
+        justify-content: center;
+        margin: 72px auto;
+        font-family: "Noto Sans KR";
+        color: #505050;
+        font-size: 20px;
+      }
+    }
+  }
+}
