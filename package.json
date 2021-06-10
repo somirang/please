@@ -1,4 +1,5 @@
 {
+  "homepage": "https://somirang.github.io/please",
   "name": "mediround-user-web",
   "version": "0.1.0",
   "private": true,
@@ -34,6 +35,8 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "PORT=8001 react-scripts start",
     "start:local": "REACT_APP_ENV=local PORT=8001 react-scripts start",
     "build": "react-scripts build",
@@ -57,5 +60,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.0"
   }
 }
